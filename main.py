@@ -5,7 +5,7 @@ import tensorflow as tf
 from tensorflow import keras
 import numpy as np
 
-UPLOAD_FOLDER = os.getcwd()+'\static\submitted'
+UPLOAD_FOLDER = os.getcwd()+'/static/submitted'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
 
 app = Flask(__name__)

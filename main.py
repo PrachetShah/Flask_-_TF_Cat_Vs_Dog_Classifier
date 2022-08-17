@@ -34,7 +34,7 @@ def home():
                 prediction = 'Dog'
             else:
                 prediction = 'Cat'
-
+            print(prediction)
             query = {
                 'src': img.filename,
                 'prediction': prediction

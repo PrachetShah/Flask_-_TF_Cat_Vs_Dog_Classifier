@@ -41,8 +41,13 @@
         </div>
         <div class="d-flex justify-content-center">
           {% if var1 %}
-          <label class="display-6 my-auto mx-3">{{ var1 }}</label>
-          <img src="/static/submitted/{{var1}}" class="w-50 px-1" />
+          <div class="d-flex flex-column my-auto">
+            <label class="display-6 my-3 mx-3">{{ var1.src }}</label>
+            <label class="display-6 mx-3 text-bold"
+              >{{ var1.prediction }}</label
+            >
+          </div>
+          <img src="/static/submitted/{{var1.src}}" class="w-50 px-1" />
           {% endif %}
         </div>
       </form>
